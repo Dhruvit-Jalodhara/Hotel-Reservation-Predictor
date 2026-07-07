@@ -195,33 +195,37 @@
              Prediction Result
         =========================== -->
 
-        {% if results == "Not_Canceled" %}
+        {% if results %}
 
-        <div class="prediction-card success-card">
+            {% if results == "Not_Canceled" %}
 
-            <div class="status-icon success">✅</div>
+            <div class="prediction-card success-card">
 
-            <h2>Reservation Confirmed</h2>
+                <div class="status-icon success">✅</div>
 
-            <p>
-                The reservation is likely to be successfully completed.
-            </p>
+                <h2>Reservation Confirmed</h2>
 
-        </div>
+                <p>
+                    The reservation is likely to be successfully completed.
+                </p>
 
-        {% else %}
+            </div>
 
-        <div class="prediction-card danger-card">
+            {% else %}
 
-            <div class="status-icon danger">❌</div>
+            <div class="prediction-card danger-card">
 
-            <h2>Reservation Cancelled</h2>
+                <div class="status-icon danger">❌</div>
 
-            <p>
-                The reservation has a higher probability of cancellation.
-            </p>
+                <h2>Reservation Cancelled</h2>
 
-        </div>
+                <p>
+                    The reservation has a higher probability of cancellation.
+                </p>
+
+            </div>
+
+            {% endif %}
 
         {% endif %}
 
