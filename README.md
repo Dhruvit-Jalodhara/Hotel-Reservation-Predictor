@@ -773,7 +773,6 @@ DagsHub stores:
 
 # 📸 Application Screenshots
 
-You can include screenshots here after deployment.
 
 ## 🏠 Landing Page
 
