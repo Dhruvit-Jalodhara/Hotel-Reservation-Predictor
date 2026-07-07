@@ -11,6 +11,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy all the rest of your project files into the container
 COPY . .
 
+# This line to tell Python where to find the 'src' folder
+ENV PYTHONPATH=/app
+
 # Expose the Hugging Face port
 EXPOSE 7860
 
