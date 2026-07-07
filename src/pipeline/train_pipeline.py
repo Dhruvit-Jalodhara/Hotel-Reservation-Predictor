@@ -21,7 +21,7 @@ class TrainPipeline:
         try:
 
             # 🔗 STEP 1: Initialize DagsHub Integration
-            dagshub.init(repo_owner='Dhruvit-Jalodhara', repo_name='Hotel-Reservation-Prediction', mlflow=True)
+            dagshub.init(repo_owner='Dhruvit-Jalodhara', repo_name='Hotel-Reservation-Predictor', mlflow=True)
 
             # 🧪 STEP 2: Set MLflow experiment name
             mlflow.set_experiment("Hotel_Reservation_Prediction")
@@ -86,7 +86,7 @@ class TrainPipeline:
                 print(f"Champion Model Test F1 Score: {best_model_f1_score:.4f}")
 
                 #print("Go to http://127.0.0.1:8000 in your browser to see the results!")
-                print("Go to https://dagshub.com/Dhruvit-Jalodhara/Hotel-Reservation-Prediction/experiments in your browser to see the results!")
+                print("Go to https://dagshub.com/Dhruvit-Jalodhara/Hotel-Reservation-Predictor/experiments in your browser to see the results!")
 
                 logging.info(f"Pipeline Completed. Champion: {best_model_name} | F1 Score: {best_model_f1_score}")
 
