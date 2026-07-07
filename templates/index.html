@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- ==========================
+             Hero Section
+        =========================== -->
+
+        <section class="hero">
+
+            <h1>🏨 Hotel Reservation Prediction</h1>
+
+            <p class="subtitle">
+                Predict whether a hotel reservation is likely to be
+                <strong>Confirmed</strong> or
+                <strong>Cancelled</strong> using Machine Learning.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="{{ url_for('index') }}">
+                    <button type="button" class="secondary-btn">
+                        🏠 Home
+                    </button>
+                </a>
+
+                <a href="{{ url_for('predict_datapoint') }}">
+                    <button type="button" class="primary-btn">
+                        🚀 Start Prediction
+                    </button>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             About
+        =========================== -->
+
+        <section class="card">
+
+            <h2>📖 About the Project</h2>
+
+            <p>
+                Hotel reservation cancellations can significantly impact hotel
+                operations and revenue. This project leverages Machine Learning
+                to analyze reservation details and predict whether a booking is
+                likely to be confirmed or cancelled before the guest arrives.
+            </p>
+
+        </section>
+
+        <!-- ==========================
+             Features
+        =========================== -->
+
+        <section class="card">
+
+            <h2>✨ Features</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <h3>⚡ Fast Prediction</h3>
+                    <p>Get booking status instantly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🤖 AI Powered</h3>
+                    <p>Prediction using Machine Learning.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📊 Reliable</h3>
+                    <p>Optimized using hyperparameter tuning.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🏨 Hotel Focused</h3>
+                    <p>Designed specifically for hotel reservations.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             Required Information
+        =========================== -->
+
+        <section class="card">
+
+            <h2>📋 Reservation Information</h2>
+
+            <p>
+                The prediction model uses the following booking details:
+            </p>
+
+            <div class="info-grid">
+
+                <ul>
+                    <li>👨 Number of Adults</li>
+                    <li>👶 Number of Children</li>
+                    <li>🌙 Weekend Nights</li>
+                    <li>🛏️ Week Nights</li>
+                    <li>🍽️ Meal Plan</li>
+                    <li>🚗 Parking Requirement</li>
+                    <li>🛌 Room Type</li>
+                </ul>
+
+                <ul>
+                    <li>📅 Lead Time</li>
+                    <li>🗓️ Arrival Month</li>
+                    <li>💼 Market Segment</li>
+                    <li>🔁 Repeated Guest</li>
+                    <li>❌ Previous Cancellations</li>
+                    <li>💰 Average Price Per Room</li>
+                    <li>⭐ Special Requests</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             How It Works
+        =========================== -->
+
+        <section class="card">
+
+            <h2>⚙️ How It Works</h2>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Enter Details</h3>
+                    <p>Fill in your hotel reservation information.</p>
+                </div>
+
+                <div class="step-arrow">➜</div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Model Analysis</h3>
+                    <p>The trained ML model processes the reservation.</p>
+                </div>
+
+                <div class="step-arrow">➜</div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Prediction</h3>
+                    <p>Receive the predicted booking status instantly.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             Call To Action
+        =========================== -->
+
+        <section class="cta">
+
+            <h2>Ready to Predict?</h2>
+
+            <p>
+                Click below to enter your reservation details and
+                get an instant prediction.
+            </p>
+
+            <a href="{{ url_for('predict_datapoint') }}">
+                <button class="primary-btn">
+                    🚀 Predict Booking Status
+                </button>
+            </a>
+
+        </section>
+
+        <!-- ==========================
+             Footer
+        =========================== -->
+
+        <footer>
+
+            <p>
+                Hotel Reservation Prediction • Machine Learning Project
+            </p>
+
+            <p>
+                © 2026 All Rights Reserved
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>

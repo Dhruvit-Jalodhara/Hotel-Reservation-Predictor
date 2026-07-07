@@ -1,0 +1,524 @@
+/* =====================================================
+   Google Font
+===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================================================
+   Reset
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* =====================================================
+   Body
+===================================================== */
+
+body{
+
+    background:linear-gradient(135deg,#050505,#111827,#0F172A);
+
+    color:#F8FAFC;
+
+    min-height:100vh;
+
+}
+
+/* =====================================================
+   Container
+===================================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/* =====================================================
+   Hero
+===================================================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 30px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+/* =====================================================
+   Hero Buttons
+===================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    padding:16px 35px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.primary-btn{
+
+    background:#D4AF37;
+
+    color:#111;
+
+}
+
+.primary-btn:hover{
+
+    background:#E6C65A;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 20px rgba(212,175,55,.6);
+
+}
+
+.secondary-btn{
+
+    background:transparent;
+
+    color:#F8FAFC;
+
+    border:2px solid #D4AF37;
+
+}
+
+.secondary-btn:hover{
+
+    background:#D4AF37;
+
+    color:#111;
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================================
+   Cards
+===================================================== */
+
+.card{
+
+    margin-top:40px;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.card h2{
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    color:#CBD5E1;
+
+    line-height:1.9;
+
+}
+
+/* =====================================================
+   Feature Grid
+===================================================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:25px;
+
+}
+
+.feature-card{
+
+    background:#1E293B;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.feature-card:hover{
+
+    border-color:#D4AF37;
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card h3{
+
+    color:#D4AF37;
+
+    margin-bottom:12px;
+
+}
+
+.feature-card p{
+
+    color:#CBD5E1;
+
+}
+
+/* =====================================================
+   Reservation Info
+===================================================== */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    margin-top:20px;
+
+}
+
+.info-grid ul{
+
+    list-style:none;
+
+}
+
+.info-grid li{
+
+    padding:10px 0;
+
+    color:#E2E8F0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* =====================================================
+   Steps
+===================================================== */
+
+.steps{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.step{
+
+    flex:1;
+
+    min-width:220px;
+
+    text-align:center;
+
+}
+
+.step-number{
+
+    width:65px;
+
+    height:65px;
+
+    background:#D4AF37;
+
+    color:#111;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin:auto auto 20px;
+
+}
+
+.step h3{
+
+    color:#D4AF37;
+
+    margin-bottom:10px;
+
+}
+
+.step p{
+
+    color:#CBD5E1;
+
+}
+
+.step-arrow{
+
+    font-size:35px;
+
+    color:#D4AF37;
+
+}
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+
+    margin-top:45px;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.cta h2{
+
+    color:#D4AF37;
+
+    font-size:35px;
+
+}
+
+.cta p{
+
+    color:#CBD5E1;
+
+    margin:20px auto 35px;
+
+    max-width:700px;
+
+}
+
+/* =====================================================
+   Footer
+===================================================== */
+
+footer{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#94A3B8;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* =====================================================
+   Scrollbar
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#D4AF37;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media(max-width:900px){
+
+    .hero h1{
+
+        font-size:40px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+    .steps{
+
+        flex-direction:column;
+
+    }
+
+    .step-arrow{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+    .hero{
+
+        padding:40px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+}
