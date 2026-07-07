@@ -777,35 +777,31 @@ You can include screenshots here after deployment.
 
 ## 🏠 Landing Page
 
-```text
-docs/images/home_page.png
-```
+![Web application landing page with  navigation menu](docs/images/home_page.png)
+
 
 ---
 
 ## 📋 Prediction Page
 
-```text
-docs/images/prediction_page.png
-```
+![Data input form fields for generating machine learning predictions](docs/images/prediction_page.png)
 
 ---
 
 ## ✅ Prediction Result
 
-```text
-docs/images/prediction_result.png
-```
+![Model inference output displaying Result](docs/images/prediction_result.png)
+
 
 ---
 
 ## 📊 MLflow Dashboard
 
-```text
-docs/images/mlflow_dashboard.png
-```
+![MLflow interface tracking model parameters scores and experiment runs](docs/images/mlflow_dashboard.png)
+
 
 ---
+
 
 # 🔮 Future Improvements
 
