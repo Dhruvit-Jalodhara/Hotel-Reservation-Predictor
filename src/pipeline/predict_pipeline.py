@@ -33,6 +33,12 @@ class PredictPipeline:
 
             logging.info("Making prediction.")
 
+            # Strip feature names to prevent mismatch errors
+            if hasattr(data_scaled, 'values'):
+                data_scaled = data_scaled.values
+            elif hasattr(data_scaled, 'toarray'):
+                data_scaled = data_scaled.toarray()
+
             # Predict booking status , Convert prediction to integer.
             prediction = model.predict(data_scaled).astype(int)     
 
