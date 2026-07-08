@@ -1,0 +1,7 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = https://dagshub.com/Dhruvit-Jalodhara/Hotel-Reservation-Predictor.dvc
+    auth = basic
+    user = Dhruvit-Jalodhara
+    password = 8184fde497a396b9b99fe78f078513d13ecf1cce
